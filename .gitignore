@@ -1,0 +1,17 @@
+#Editor
+.vscode/
+
+# Dependency directories
+node_modules/
+
+# Build files
+/build
+
+# Config files
+.env
+
+# Packet managers
+package-lock.json
+yarn.lock
+yarn-error.log
+stats.json
