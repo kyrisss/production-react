@@ -8,8 +8,8 @@ const formatObject = (obj: Mods) => {
 
 export function classNames(
   cls: string,
-  mods: Mods,
-  additional: string[]
+  mods: Mods = {},
+  additional: string[] = []
 ): string {
-  return [cls, ...additional, ...formatObject(mods)].join(" ");
+  return [cls, ...additional.filter(Boolean), ...formatObject(mods)].join(" ");
 }
